@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(20, 20, 20);
+  color: #fff;
+}
+
+.hidden{
+  display: none;
+}
+.announcerBG{
+  position:absolute;
+  width: 200px;
+  height: 250px;
+  top: 50%;
+  left: 50%;
+  margin-top: -120px;
+  margin-left: -100px;
+  background-color: rgba(228, 91, 0, 0.87);
+  filter: blur(8px);
+  -webkit-filter: blur(10px);
+}
+.announcer{
+  font-size: larger;
+  letter-spacing: 3px;
+  font-weight: bold;
+  position:absolute;
+  width: 200px;
+  height: 250px;
+  top: 50%;
+  left: 50%;
+  margin-top: -120px;
+  margin-left: -100px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+.announcer h2{
+  margin: 0;
+  padding: 0;
+  color: rgb(3, 10, 78);
+}
+.announcer h1{
+  margin: 0;
+  padding: 0;
+  transform: scale(2);
+  animation: winnerBlimp 2s repeat;
+  color: rgb(221, 222, 238);
+}
+@keyframes winnerBlimp{
+  from{transform: scale(1);}
+  to{transform: scale(3);}
+}
+.okBtn{
+  border-radius: 7px;
+  width: 80px;       
+  height: 60px;
+  background: rgba(0, 156, 184, 0.774);
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+.game{
+  border-radius: 30px;
+  padding: 15px 30px;
+  border: 2px solid rgb(72, 0, 114);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-evenly;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -220px;
+  margin-left: -136.46px;
+}
+.board {
+  margin: 10px;
+  height: 180px;
+  width: 180px;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.square{
+  border-radius: 7px;
+  flex: 0 0 50px;          
+  height: 50px;
+  background: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+
+}
+
+
+.bottomPanel{
+  height: 60px;
+  width: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.playX, .playO{
+  height: 50px;
+  width: 85px;
+  background-color: grey;
+  color: grey;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  cursor:not-allowed; 
+}
+.playO{
+  border-radius: 0px 0px 30px 0px;
+}
+.playX{
+  border-radius: 0px 0px 0px 30px;
+}
+
+.nowPlay{
+  background-color: rgb(31, 202, 103);
+  color: rgb(14, 14, 116);
+}
+
+.resetButton{
+  background-color: cornflowerblue;
+  color: orangered;
+  height: 25px;
+  width: 160px;
+  font-size: 15px;
+  margin: 20px;
+  font-weight: bold;
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-direction: row;
+}
