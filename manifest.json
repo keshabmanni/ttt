@@ -36,7 +36,7 @@
       "purpose": "any maskable"
     }
   ],
-  "start_url": "/",
+  "start_url": "/ttt",
   "display": "standalone",
   "theme_color": "#ed3b00",
   "background_color": "#171211"
